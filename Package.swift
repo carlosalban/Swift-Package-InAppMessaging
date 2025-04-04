@@ -7,16 +7,16 @@ let package = Package(
     products: [
         .library(
             name: "Swift-InAppMessaging",
-            targets: ["SMIClientCore", "SMIClientUI"]),
+            targets: ["SMIClientCoreV2", "SMIClientUIV2"]),
     ],
     targets: [
         .binaryTarget(
-            name: "SMIClientCore",
+            name: "SMIClientCoreV2",
             url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.8.1/SMIClientCore-Release.xcframework.zip",
             checksum: "93c04f08f5adaeb7ce8fadb11d7aa8b716d2f3b36243a46ad99a1fdd02a99250"
         ),
         .binaryTarget(
-            name: "SMIClientUI",
+            name: "SMIClientUIV2",
             url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.8.1/SMIClientUI-Release.xcframework.zip",
             checksum: "fd249aac3343a75be3d9e5b692b6d53022f305f11a2ce9601845bfc16d94214c"
         ),
